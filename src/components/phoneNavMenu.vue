@@ -1,8 +1,8 @@
 <template>
   <div>
     <top-nav-menu :title="titles" :index1="indexs"></top-nav-menu>
-    <item1 v-if="indexs <=0"></item1>
-    <router-view class="view" v-if="indexs >=1"></router-view>
+    <item1 v-if="indexs <= 0"></item1>
+    <router-view class="view" v-if="indexs >= 1"></router-view>
     <div class="tabBar">
       <router-link to="/item1">
 <!--        路由似乎会让click失效-->
